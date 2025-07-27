@@ -55,7 +55,6 @@ public class WebSecurityConfig {
                 .rememberMe(me -> me.rememberMeParameter("remember-me"))
                 .httpBasic(withDefaults());
 
-        // TODO: remove these after upgrading the DB from H2 infile DB
         http.csrf(csrf -> csrf.disable());
         http.headers(headers -> headers.frameOptions(options -> options.disable()));
 

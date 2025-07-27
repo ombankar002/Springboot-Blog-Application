@@ -137,6 +137,7 @@ public class AccountController {
                 int lenght = 10;
                 boolean useLetters = true;
                 boolean useNumbers = true;
+                @SuppressWarnings("deprecation")
                 String generatedString = RandomStringUtils.random(lenght, useLetters, useNumbers);
                 String final_photo_name = generatedString + fileName;
                 String absolute_fileLocation = AppUtil.get_upload_path(final_photo_name);
@@ -166,7 +167,6 @@ public class AccountController {
                 return "redirect:/profile";
 
             } catch (Exception e) {
-                // TODO: handle exception
             }
         }
         return "redirect:/profile?error";

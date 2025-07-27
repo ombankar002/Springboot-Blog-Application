@@ -1,0 +1,37 @@
+{"properties": [
+  {
+    "name": "Server.port",
+    "type": "java.lang.String",
+    "description": "A description for 'Server.port'"
+  },
+  {
+    "name": "thymeleaf.version",
+    "type": "java.lang.String",
+    "description": "A description for 'thymeleaf.version'"
+  },
+  {
+    "name": "thymeleaf-layout-dialect.version",
+    "type": "java.lang.String",
+    "description": "A description for 'thymeleaf-layout-dialect.version'"
+  },
+  {
+    "name": "password.token.reset.timeout.minutes",
+    "type": "java.lang.String",
+    "description": "A description for 'password.token.reset.timeout.minutes'"
+  },
+  {
+    "name": "mail.transport.protocol",
+    "type": "java.lang.String",
+    "description": "A description for 'mail.transport.protocol'"
+  },
+  {
+    "name": "spring.mail.smtp.ssl.trust",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.mail.smtp.ssl.trust'"
+  },
+  {
+    "name": "site.domain",
+    "type": "java.lang.String",
+    "description": "A description for 'site.domain'"
+  }
+]}
