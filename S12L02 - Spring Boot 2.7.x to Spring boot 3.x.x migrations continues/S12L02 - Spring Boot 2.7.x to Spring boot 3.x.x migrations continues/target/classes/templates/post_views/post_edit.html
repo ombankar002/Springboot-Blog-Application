@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+  <head th:replace="/fragments/head :: head">
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <div class="bg-box">
+      <img th:src="@{/resources/static/images/nav-bg.jpg}" alt="">
+    </div>
+    <header th:replace="/fragments/header :: header">
+  </div>
+ <section class="food_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form_container">
+            <h3> Add post </h3>
+            <form action="#"
+                th:action="@{'/posts/{id}/edit' (id=${post.id})}"
+                th:object="${post}"
+                method="post">
+              <div class="form-group">
+                <input type="hidden" id="account" name="account" th:field="*{account}"/>
+                <input id="title" th:field="*{title}" name="title" type="text" class="form-control" placeholder="title" />
+                <p th:if="${#fields.hasErrors('title')}" th:errors="*{title}" class="alert alert-danger" role="alert">title Error</p>
+              </div>
+              <div class="form-group">
+                <textarea id="editor" th:field="*{body}" name="body"></textarea>
+                <p th:if="${#fields.hasErrors('body')}" th:errors="*{body}" class="alert alert-danger" role="alert">title Error</p>
+
+              </div>
+                <button type="submit"  class="btn btn-primary">
+                  update post
+                </button>
+            </form>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!-- end book section -->
+  <footer th:replace="/fragments/footer :: footer">
+</body>
+
+</html>
