@@ -1,2 +1,34 @@
-# Post-Management-Web-Application
-This is a full-stack Post Management Web Application built using Spring Boot and Java on the backend and HTML, CSS, Bootstrap, and JavaScript on the frontend.The application ensures secure user authentication and basic session management, with a clean and responsive UI.
+# 📝 Springboot Blog Application
+
+A Springboot web application for managing blog posts with user authentication, CRUD operations, and a responsive interface. Built using **Java**, **Spring Boot**, **HTML/CSS**, **Bootstrap**, and **JavaScript**.
+
+---
+
+## 🚀 Features
+
+- 🔐 **User Registration & Login**
+- ➕ **Add New Blog Posts**
+- 📝 **Edit & Update Existing Posts**
+- 🗑️ **Delete Posts**
+- 📋 **View All Posts**
+- ✅ **Form Validation**
+- 💻 **Responsive UI using Bootstrap**
+- 🗄️ **H2 Database Integration**
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer       | Technology                        |
+|-------------|-----------------------------------|
+| Backend     | Java, Spring Boot, Spring MVC     |
+| ORM         | Spring Data JPA (Hibernate)       |
+| Frontend    | HTML, CSS, Bootstrap, JavaScript  |
+| Database    | H2 Database (can switch to MySQL) |
+| Server      | Embedded Apache Tomcat            |
+
+---
+
+⭐ Support
+If you like this project, don't forget to ⭐ the repo and share! Contributions welcome.
+
